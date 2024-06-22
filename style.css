@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Gaya navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1b2a;
+  padding: 10px 20px;
+}
+
+/* Gaya untuk brand di navbar */
+.navbar-brand {
+  color: #ffcc29;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Gaya untuk daftar menu navbar */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gaya untuk setiap item di navbar */
+.nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+/* Gaya untuk tautan di navbar */
+.nav-link {
+  color: #ffcc29;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Efek hover pada tautan di navbar */
+.nav-link:hover {
+  color: #f0a500;
+}
+
+/* Gaya untuk tanda dropdown pada tautan dropdown */
+.dropdown-toggle::after {
+  font-size: 12px;
+}
+
+/* Gaya dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1b263b;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Gaya untuk setiap item di dropdown menu */
+.dropdown-item {
+  color: #ffcc29;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Efek hover pada setiap item di dropdown menu */
+.dropdown-item:hover {
+  background-color: #f0a500;
+}
+
+/* Menampilkan dropdown menu saat item navbar dihover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Gaya utama untuk elemen main */
+main {
+  padding: 20px;
+}
+
+/* Gaya untuk konten utama */
+#content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+/* Gaya untuk judul utama */
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #0d1b2a;
+}
+
+/* Gaya untuk bagian proyek */
+#project {
+  padding: 0 50px;
+}
+
+/* Gaya untuk judul proyek */
+#project h2 {
+  text-align: center;
+  padding-top: 60px;
+  color: #0d1b2a;
+  font-size: 28px;
+}
+
+/* Gaya untuk tombol proyek */
+.project-button {
+  background-color: #ffcc29;
+  color: #0d1b2a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0 100px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol proyek */
+.project-button:hover {
+  background-color: #f0a500;
+}
+
+/* Gaya untuk artikel */
+article {
+  flex: 2;
+  margin-right: 20px;
+  padding-top: 150px;
+}
+
+/* Gaya untuk aside */
+aside {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+/* Gaya untuk foto profil */
+.profile-photo {
+  width: 200px;
+  height: 300px;
+  /* Hapus atau komentari border-radius jika tidak diperlukan */
+  /* border-radius: 50%; */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efek hover pada foto profil */
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk container kartu proyek */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Gaya untuk kartu proyek */
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada kartu proyek */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk gambar di dalam kartu */
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Gaya untuk judul dan deskripsi di dalam kartu */
+.card h3,
+.card p {
+  padding: 10px;
+  margin: 0;
+}
+
+/* Gaya untuk judul di dalam kartu */
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d1b2a;
+}
+
+/* Gaya untuk deskripsi di dalam kartu */
+.card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Gaya untuk tombol detail */
+.button-detail {
+  background-color: #ffcc29;
+  color: #0d1b2a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol detail */
+.button-detail:hover {
+  background-color: #f0a500;
+}
+
+/* Gaya untuk footer */
+footer {
+  text-align: center;
+  background: #0d1b2a;
+  color: #ffcc29;
+  padding: 10px 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Tag pembuka elemen HTML dengan atribut bahasa Inggris -->
+  <head>
+    <meta charset="UTF-8" /> <!-- Pengaturan pengkodean karakter UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Pengaturan tampilan responsif -->
+    <title>Portofolio</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="style.css" /> <!-- Menghubungkan file CSS eksternal -->
+    <script src="script.js" defer></script> <!-- Menghubungkan file JavaScript eksternal dengan atribut defer -->
+  </head>
+  <body>
+    <header>
+      <!-- navbar: navigasi utama halaman -->
+      <nav class="navbar">
+        <a style="text-decoration: none" href="/index.html">
+          <div class="navbar-brand">Portofolio</div> <!-- Merek atau brand dalam navbar -->
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a> <!-- Tautan ke halaman utama -->
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#contact" class="nav-link dropdown-toggle">Contact</a> <!-- Tautan dropdown menu kontak -->
+            <div class="dropdown-menu">
+              <a href="https://wa.me/089612974825" class="dropdown-item">WhatsApp</a> <!-- Tautan menu dropdown WhatsApp -->
+              <a href="mailto:ferryezra80@gmail.com" class="dropdown-item">Email</a> <!-- Tautan menu dropdown Email -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#project" class="nav-link">Project</a> <!-- Tautan menu ke bagian project -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main content: konten utama halaman -->
+    <main>
+      <div id="content">
+        <article>
+          <h1>Hallo Perkenalkan<br> Saya Ferry Ezra Fabiandika</h1> <!-- Judul dan deskripsi singkat diri -->
+          <p>
+            saya adalah seorang mahasiswa dari institut teknologi nasional malang, sekarang saya mengambil jurusan teknik informatika di fakultas teknologi industri. asal saya dari sidoarjo, sebelumnya saya bersekolah menengah atas yang memiliki cita-cita menjadi programmer maka dari itu saya sekarang mempunyai hobi membuat sebuah project kecil-kecilan untuk mengembangkan skil saya.
+          </p> <!-- Paragraf deskripsi diri -->
+          <button class="project-button" onclick="scrollToProjects()">Lihat Project</button> <!-- Tombol untuk menampilkan project -->
+        </article>
+
+        <aside>
+          <img src="img/ezra.png" alt="Foto Saya" class="profile-photo" /> <!-- Gambar profil -->
+        </aside>
+      </div>
+
+      <!-- Card Project: daftar proyek -->
+      <section id="project">
+        <h2>Project saya</h2> <!-- Judul bagian proyek -->
+        <div class="card-container">
+          <div class="card">
+            <img src="img/rs.png" alt="Project 1" /> <!-- Gambar proyek 1 -->
+            <h3>Aplikasi Rumah Sakit Citra Medika</h3> <!-- Judul proyek 1 -->
+            <p>
+              Sistem informasi rumah sakit Citra Medika berbasis Laravel untuk mengelola sistem yang ada pada rumah sakit.
+            </p> <!-- Deskripsi proyek 1 -->
+            <a href="https://github.com/Ferry-Ezra/SI_RS_CitraMedika"><button class="button-detail">Detail</button></a> <!-- Tombol detail proyek 1 -->
+          </div>
+          <div class="card">
+            <img src="img/logo.png" alt="Project 2" /> <!-- Gambar proyek 2 -->
+            <h3>Sistem Informasi Sehat Bersama</h3> <!-- Judul proyek 2 -->
+            <p>
+              Sistem informasi menggunakan PHP native untuk layanan sehat bersama untuk memudahkan pengguna.
+            </p> <!-- Deskripsi proyek 2 -->
+            <a href="#"><button class="button-detail">Detail</button></a> <!-- Tombol detail proyek 2 -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer: bagian bawah halaman -->
+    <footer>
+      <p>By Ferry Ezra</p> <!-- Penulis halaman -->
+    </footer>
+  </body>
+</html>
